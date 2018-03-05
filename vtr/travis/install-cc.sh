@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ./common.sh
+source /tmp/common.sh
 
 COMPILER=$(echo $CC | sed -e's/-.*$//')
 VERSION=$(echo $CC | sed -e's/^.*-//')
@@ -8,5 +8,7 @@ VERSION=$(echo $CC | sed -e's/^.*-//')
 echo "Compiler: $COMPILER"
 echo " Version: $VERSION"
 
-export ${COMPILER}_VERSION=$VERSION
+UCOMPILER="$(echo $COMPILER | tr a-z A-Z)"
+
+export ${UCOMPILER}_VERSION=$VERSION
 ./install-$COMPILER.sh

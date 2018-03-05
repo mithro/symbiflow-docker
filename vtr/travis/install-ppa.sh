@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ./common.sh
+source /tmp/common.sh
 
 apt-get -y update
 apt-get install -y python-software-properties

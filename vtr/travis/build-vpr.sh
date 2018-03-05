@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ./common.sh
+source /tmp/common.sh
 
 #export BUILD_TYPE=debug
 export CMAKE_PARAMS="-DCMAKE_INSTALL_PREFIX=/opt/vtr"

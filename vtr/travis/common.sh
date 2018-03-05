@@ -5,7 +5,7 @@ set -e
 
 if [[ -z "$CLEANUP" ]]; then
 	function cleanup {
-		./apt-cleanup.sh
+		/tmp/apt-cleanup.sh
 	}
 	trap cleanup EXIT
 
